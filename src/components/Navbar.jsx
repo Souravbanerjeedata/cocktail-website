@@ -15,7 +15,7 @@ const Navbar = () => {
       { backgroundColor: "transparent" },
       {
         backgroundColor: "#00000050",
-        pixi: { blurX: 15, blurY: 15 },
+        backgroundFilter: "blur(10px)",
         duration: 1,
         ease: "power1.inOut",
       }
@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav>
       <div>
         <a href="#home" className="flex items-center gap-2">
-          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt="Logo Image" />
           Velvet Pour
         </a>
 
