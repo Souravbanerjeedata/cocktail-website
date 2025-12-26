@@ -1,8 +1,8 @@
 import gsap from "gsap";
-import { ScrollTrigger, SplitText } from "gsap/all";
+import { ScrollTrigger, SplitText, PixiPlugin } from "gsap/all";
 import Navbar from "./components/Navbar";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText, PixiPlugin);
 
 const App = () => {
   return (
