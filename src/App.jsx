@@ -1,16 +1,27 @@
 import gsap from "gsap";
-import { ScrollTrigger, SplitText, PixiPlugin } from "gsap/all";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import { ScrollTrigger, SplitText } from "gsap/all";
 
-gsap.registerPlugin(ScrollTrigger, SplitText, PixiPlugin);
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import Cocktails from "./components/Cocktails.jsx";
+import About from "./components/About.jsx";
+import Art from "./components/Art.jsx";
+import Menu from "./components/Menu.jsx";
+import Contact from "./components/Contact.jsx";
+
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (
-    <div className="h-screen">
+    <main>
       <Navbar />
       <Hero />
-    </div>
+      <Cocktails />
+      <About />
+      <Art />
+      <Menu />
+      <Contact />
+    </main>
   );
 };
 
